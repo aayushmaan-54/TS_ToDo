@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css">
+  <script type="module" src="./src/main.ts" defer></script>
+  <title>ToDo</title>
+</head>
+<body class="w-screen h-screen bg-[#4793AF] text-[#FFC470] text-center font-semibold">
+  <h1 class="font-extrabold text-4xl underline mb-44 pt-10">ToDo</h1>
+  <div class="flex flex-col items-center justify-center">
+    <div class="h-[50vh] bg-[#DD5746] rounded-lg customScrollbar py-3 shadow-xl">
+      <ul class="h-[40vh] overflow-y-scroll" id="todoList">
+        
+      </ul>
+      <form class="px-4" id="form">
+        <label for="add-todo">New ToDo</label>
+        <input type="text" id="add-todo" class="bg-[#8B322C] py-1 rounded px-1 outline-none">
+        <button class=" bg-[#4793AF] py-1 px-1 rounded-md hover:bg-[#377288]">Add Todo</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
